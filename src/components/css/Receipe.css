@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+section{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #c0beba;
+    width:80%;
+    margin: 20px auto;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.content{
+    width:100%;
+}
+
+section p:first-child{
+    margin-bottom: 13px;
+}
+section p:not(:nth-child(1)){
+    font-size:20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+section ul,ol{
+margin:10px 0px 10px 30px;
+}
+section ul li,section ol li{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+@media only screen and (max-width: 1000px){
+    .ready_receipe{
+        width: 80%
+    }
+    section{
+        width: 90%
+    }
+}

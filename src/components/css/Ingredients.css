@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.ingredients_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredients_list{
+    transform: translateX(-19vw);
+}
+.ingredients_list > .ingredients > h2{
+    margin-bottom:20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.ingredients_list .ingredients .list{
+    display: flex;
+    flex-direction: column;
+    list-style-position: inside;
+}
+
+.ingredients_list .ingredients .list li{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.ready_receipe,section{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #c0beba;
+    width:80%;
+    margin: 20px auto;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.ready_receipe .ready_description{
+    flex-grow: 1 ;
+}
+
+.ready_receipe button{
+    padding:10px 15px;
+    border-radius: 5px;
+    background-color: #9f543e;
+    color:white;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1000px){
+    .ready_receipe{
+        width: 90%
+    }
+    section{
+        width:90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ingredients_list{
+        transform: translateX(0);
+    }
+    .ready_receipe .ready_description h3,.ready_receipe .ready_description p{
+        margin-bottom: 10px;
+    }
+
+  }
